@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula</title>
+    <style>
+        body{
+            display: -webkit-flex;
+            margin: 100px ;
+            justify-content: center;
+            align-self: center;
+        }
+        fieldset{
+            background-color: whitesmoke;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required autofocus>
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <br>
+            <label for="cep">CEP</label>
+            <input type="text" name="cep"  pattern="\d{5}-?\d{3}"  maxlength="9" id="cep">
+            <br>
+            <br>
+            <label for="endereço">Endereço</label>
+            <input type="text" name="endereço" id="endereço" required>
+            <br>
+            <br>
+            <label for="numero">Numero </label>
+            <input type="number" name="numero" id="numero" required>
+            <br>
+            <br>
+            <label for="Linkdin">Linkedin</label>
+            <input type="url" name="Linkedin" id="linkedin" required>
+            <br>
+            <br>
+            <label for="Nascimento">Nascimento</label>
+            <input type="datetime" name="data" id="data" pattern="\d{2}/?\d{2}/?\d{4}" maxlength="10" >
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="Curso">Curso</label>
+           <select name="Curso" id="curso">
+            <option value="ADS">Ads</option>
+            <option value="Ciencia da computacao">Ciencia da computacao</option>
+            <option value="Redes de Sistemas de Informacao">"Redes de Sistemas de Informacao</option>
+            <option value="Jogos">Jogos</option>
+
+           </select>
+            <br>
+            <br>
+            <label for="Sexo">sexo</label>
+            <br>
+            <input type="radio" value="Masculino" name="sexo" id="">Masculino
+            <input type="radio" value="Feminino" name="sexo" id="">Feminino
+            <input type="radio" value="Outros" name="sexo" id="">Outros
+            <br>
+            <br>
+            <label for="Turno">Turno</label>
+            <br>
+            <input type="checkbox" value="Manhã" name="turno" id="">Manhã
+            <input type="checkbox" value="Tarde" name="turno" id="">Tarde
+            <input type="checkbox" value="Noite" name="turno" id="">Noite
+
+        </fieldset>
+
+
+
+
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
